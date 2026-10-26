@@ -1,11 +1,11 @@
 /* --- Reset & Variabel --- */
 :root {
-    --bg-main: #F4F4F6; /* Putih tulang modern */
-    --bg-dark: #121212; /* Hitam pekat */
+    --bg-main: #F4F4F6;
+    --bg-dark: #121212;
     --text-dark: #1A1A1A;
     --text-light: #F4F4F6;
     --text-muted: #666666;
-    --accent-color: #00A8E8; /* Cyan terang ala tinta cetak */
+    --accent-color: #00A8E8;
     --font-heading: 'Syne', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -16,9 +16,7 @@
     box-sizing: border-box; 
 }
 
-html { 
-    scroll-behavior: smooth; 
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: var(--font-body);
@@ -188,9 +186,7 @@ nav {
     transition: 0.3s;
 }
 
-.btn-link:hover {
-    background-color: #fff;
-}
+.btn-link:hover { background-color: #fff; }
 
 .contact-card {
     background-color: #1A1A1A;
@@ -204,16 +200,8 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-.contact-card ul {
-    list-style: none;
-}
-
-.contact-card li {
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-    color: #bbbbbb;
-}
-
+.contact-card ul { list-style: none; }
+.contact-card li { margin-bottom: 1rem; font-size: 1.05rem; color: #bbbbbb; }
 .contact-card strong { color: #fff; }
 
 /* --- Resume Section --- */
@@ -249,7 +237,6 @@ nav {
     color: var(--accent-color);
 }
 
-/* Timeline */
 .timeline {
     border-left: 2px solid #eaeaea;
     padding-left: 2rem;
@@ -282,25 +269,11 @@ nav {
     margin-bottom: 1rem;
 }
 
-.timeline-item h4 {
-    font-size: 1.3rem;
-    margin-bottom: 0.3rem;
-}
-
-.company {
-    font-weight: 600;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-}
-
-.timeline-item ul {
-    padding-left: 1.2rem;
-    color: var(--text-muted);
-}
-
+.timeline-item h4 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+.company { font-weight: 600; color: var(--text-muted); margin-bottom: 1rem; }
+.timeline-item ul { padding-left: 1.2rem; color: var(--text-muted); }
 .timeline-item li { margin-bottom: 0.5rem; }
 
-/* Skill Tags */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -336,15 +309,8 @@ nav {
 }
 
 .text-center { text-align: center; }
-.portfolio-section h2 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-}
-.subtitle {
-    color: var(--text-muted);
-    margin-bottom: 4rem;
-    font-size: 1.1rem;
-}
+.portfolio-section h2 { font-family: var(--font-heading); font-size: 3rem; }
+.subtitle { color: var(--text-muted); margin-bottom: 4rem; font-size: 1.1rem; }
 
 .portfolio-grid {
     display: grid;
@@ -356,16 +322,16 @@ nav {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    aspect-ratio: 4/3; /* Membuat semua kotak gambar berukuran seragam */
-    background-color: #222; /* Warna latar belakang gelap saat memuat */
+    aspect-ratio: 4/3;
+    background-color: #222;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Tambahan bayangan tipis */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .portfolio-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Memastikan gambar memenuhi kotak tanpa merusak rasio */
+    object-fit: cover;
     transition: transform 0.5s ease;
 }
 
@@ -386,13 +352,7 @@ nav {
 
 .portfolio-item:hover img { transform: scale(1.05); }
 .portfolio-item:hover .portfolio-overlay { opacity: 1; }
-
-.portfolio-overlay h3 {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--accent-color);
-}
+.portfolio-overlay h3 { font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent-color); }
 
 /* --- Footer --- */
 footer {
@@ -409,14 +369,7 @@ footer {
         flex-direction: column;
         grid-template-columns: 1fr;
     }
-    
-    .nav-links { display: none; } /* Sembunyikan menu di HP */
-    
-    .hero-image {
-        width: 100%;
-        height: 400px;
-        margin-top: 2rem;
-    }
-    
+    .nav-links { display: none; }
+    .hero-image { width: 100%; height: 400px; margin-top: 2rem; }
     .watermark, .resume-watermark { display: none; }
 }
